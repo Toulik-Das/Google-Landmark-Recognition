@@ -11,7 +11,35 @@ For each query image, you will predict one landmark label and a corresponding co
 
 If a submission has N predictions (label/confidence pairs) sorted in descending order by their confidence scores, then the Global Average Precision is computed as:
 
-\frac{1}{M}\sum_{i=1}^{N}P(i)rel(i)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>G</mi>
+  <mi>A</mi>
+  <mi>P</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <mi>M</mi>
+  </mfrac>
+  <munderover>
+    <mo>&#x2211;<!-- ∑ --></mo>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mi>N</mi>
+  </munderover>
+  <mi>P</mi>
+  <mo stretchy="false">(</mo>
+  <mi>i</mi>
+  <mo stretchy="false">)</mo>
+  <mi>r</mi>
+  <mi>e</mi>
+  <mi>l</mi>
+  <mo stretchy="false">(</mo>
+  <mi>i</mi>
+  <mo stretchy="false">)</mo>
+</math>
 
 where:
 
