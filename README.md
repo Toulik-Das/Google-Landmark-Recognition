@@ -10,7 +10,9 @@ Submissions are evaluated using Global Average Precision (GAP) at k, where k=1. 
 For each query image, you will predict one landmark label and a corresponding confidence score. The evaluation treats each prediction as an individual data point in a long list of predictions (sorted in descending order by confidence scores), and computes the Average Precision based on this list.
 
 If a submission has N predictions (label/confidence pairs) sorted in descending order by their confidence scores, then the Global Average Precision is computed as:
-GAP=1M∑i=1NP(i)rel(i)
+
+\frac{1}{M}\sum_{i=1}^{N}P(i)rel(i)
+
 where:
 
 N is the total number of predictions returned by the system, across all queries
